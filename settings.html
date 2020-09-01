@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pannello di controllo | Guns&Rum</title>
     <script src="psw.js"></script>
+    <script>
+    </script>
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Hello world!</h1>
+    <iframe id="theFrame" src="about:blank" />
+
+    <!-- We'll transform this input into a pond -->
+    <input type="file" class="filepond">
+
+    <!-- Load FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+    <!-- Turn all file input elements into ponds -->
+    <script>
+        FilePond.parse(document.body);
+    </script>
 </body>
+
 
 
 </html>
